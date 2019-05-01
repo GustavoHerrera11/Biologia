@@ -1,1 +1,366 @@
 /* Empty. Add your own CSS if you like */
+.titulo {
+	text-align: center;
+	color: skyblue;
+	font-size: 50px;
+	font-family: algerian;
+	background-color: gray; 
+  border-radius: 40%;
+  border: solid;
+  opacity: 0.8;
+}
+.media {
+	 text-align: center;
+}
+.fond {
+	background-color: #ccd9ff; 
+	opacity: 0.4;
+}
+ion-view {
+	background-image: url(https://st2.depositphotos.com/3580719/9704/v/950/depositphotos_97042898-stock-illustration-seamless-background-on-a-theme.jpg);
+}
+.dna {
+  background:green;
+  height: 2px;
+  width: 200px;
+  margin: 30px auto;
+  position: relative;
+  animation: dna-rotate 1.6s infinite linear;
+}
+.dna::after,
+.dna::before {
+  content: '';
+  width: 20px;
+  display: block;
+  height: 20px;
+  background: yellow;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+.dna::after {
+  right: 0;
+  margin-right: -9px;
+  animation: buble-right 1.6s linear infinite;
+}
+.dna::before {
+  animation: buble-left 1.6s linear infinite;
+}
+.dna:nth-child(0),
+.dna:nth-child(0):before,
+.dna:nth-child(0):after {
+  animation-delay: 0s;
+}
+.dna:nth-child(1),
+.dna:nth-child(1):before,
+.dna:nth-child(1):after {
+  animation-delay: 0.15s;
+}
+.dna:nth-child(2),
+.dna:nth-child(2):before,
+.dna:nth-child(2):after {
+  animation-delay: 0.3s;
+}
+.dna:nth-child(3),
+.dna:nth-child(3):before,
+.dna:nth-child(3):after {
+  animation-delay: 0.45s;
+}
+.dna:nth-child(4),
+.dna:nth-child(4):before,
+.dna:nth-child(4):after {
+  animation-delay: 0.6s;
+}
+.dna:nth-child(5),
+.dna:nth-child(5):before,
+.dna:nth-child(5):after {
+  animation-delay: 0.75s;
+}
+.dna:nth-child(6),
+.dna:nth-child(6):before,
+.dna:nth-child(6):after {
+  animation-delay: 0.9s;
+}
+.dna:nth-child(7),
+.dna:nth-child(7):before,
+.dna:nth-child(7):after {
+  animation-delay: 1.05s;
+}
+.dna:nth-child(8),
+.dna:nth-child(8):before,
+.dna:nth-child(8):after {
+  animation-delay: 1.2s;
+}
+.dna:nth-child(9),
+.dna:nth-child(9):before,
+.dna:nth-child(9):after {
+  animation-delay: 1.35s;
+}
+.dna:nth-child(10),
+.dna:nth-child(10):before,
+.dna:nth-child(10):after {
+  animation-delay: 1.5s;
+}
+.dna:nth-child(11),
+.dna:nth-child(11):before,
+.dna:nth-child(11):after {
+  animation-delay: 1.65s;
+}
+.dna:nth-child(12),
+.dna:nth-child(12):before,
+.dna:nth-child(12):after {
+  animation-delay: 1.8s;
+}
+@-moz-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: green;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-webkit-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: yellow;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-o-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: green;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: #2196f3;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-moz-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: green;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-webkit-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-o-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: red;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: red;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-moz-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: green;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-webkit-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: green;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-o-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: green;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+
+/* TABLA NUTRICIONAL */
+
+.nutrifacts-html {
+  padding: 2px;
+  font-family:"Helvetica";
+  font-size: 12px;
+  float:center;
+  display: block;
+  margin: auto;
+  border: 2px solid black;
+  width:250px;
+  margin-top:2px;
+  background-color: white;
+  }
+.nutrifacts-html table{
+  border-collapse: collapse;
+  width: 100%
+}
+.nutrifacts-html td {
+  border-top: 1px solid black;
+}
+.nutrifacts-html h2 {
+  margin:0;
+  font-size:29px; 
+}
+.separator {
+  height:7px;
+  background-color:black;
+  margin-top:2px;
+}
+.alineartexto {
+  text-align:right;
+}
+.alinearcantidad {
+  text-align:right;
+}
