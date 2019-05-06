@@ -1,5 +1,13 @@
 angular.module('starter.controllers', [])
 
+.controller('juegoCtrl', function($scope) {})
+
+.controller('tablasCtrl', function($scope) {})
+
+.controller('infografiasCtrl', function($scope) {})
+
+.controller('ADNCtrl', function($scope) {})
+
 .controller('InicioCtrl', function($scope) {})
 
 .controller('DashCtrl', function($scope) {})
