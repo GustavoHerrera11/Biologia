@@ -1,6 +1,8 @@
 {
   "name": "ADN3DApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic1",
   "watchPatterns": [
     "scss/**/*",

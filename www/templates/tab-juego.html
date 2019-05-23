@@ -1,5 +1,53 @@
-<ion-view view-title="Juego">
-	<ion-content>
-		
+<ion-view view-title="JUEGO DE MEMORIA">
+  	<ion-content class="padding">
+      <div class="container">
+      <div class="row">
+        <div class="col col-35"></div>
+        <div class="col col-30">
+                <h2 class="asd">JUEGO DE MEMORIA</h2>
+              <section class="score-panel">
+                <ul class="stars">
+                <!--<li><i class="fa fa-star"></i></li>-->
+                <!--<li><i class="fa fa-star"></i></li>-->
+                <!--<li><i class="fa fa-star"></i></li>-->
+                </ul>
+
+                <span class="moves"></span> Moves
+                
+        <!--Game Over Button to Start Again-->
+              <div class="restart"> Restart Game&#8594;<button class="button" input type="button" onClick= "location.reload(true)"><i class="fa fa-repeat"></i></button>
+                   </div>
+                   
+                  <!--<div class="restart">
+                Play Again&#8594;   <i class="fa fa-repeat"></i>
+                </div>-->
+              </section>
+
+              <ul class="deck">
+                  
+              </ul>   
+          
+
+      <!-- The Modal Content Message  from W3Schools.com-->
+      <div id="score-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-score-content">
+               <span class="close">&times;</span>
+                <p>¡Felicidades! ¡Eres un ganador!</p>
+            <p> Con <span class="modal-moves"></span>
+           movimientos y calificación final de <span class="countStars">3</span> de 3 estrellas</p>
+          <p>Tomó esta cantidad de tiempo para ganar: <span class="allSeconds">0</span> segundos</p>
+          </div> 
+          
+          <button id="play-again-btn">JUGAR DE NUEVO</button>
+        </div>
+
+      </div>
+        </div>
+        <div class="col col-35"></div>
+      </div>
+    </div>
 	</ion-content>
 </ion-view>

@@ -4,7 +4,7 @@
 	color: skyblue;
 	font-size: 50px;
 	font-family: algerian;
-	background-color: gray; 
+	background-color: gray;
   border-radius: 40%;
   border: solid;
   opacity: 0.8;
@@ -19,8 +19,9 @@
 ion-view {
 	background-image: url(https://st2.depositphotos.com/3580719/9704/v/950/depositphotos_97042898-stock-illustration-seamless-background-on-a-theme.jpg);
 }
+/* ESTILO DEL ADN */
 .dna {
-  background:green;
+  background:yellow;
   height: 2px;
   width: 200px;
   margin: 30px auto;
@@ -123,7 +124,7 @@ ion-view {
   }
   75% {
     width: 0;
-    background: green;
+    background: yellow;
   }
   100% {
     width: 200px;
@@ -159,7 +160,7 @@ ion-view {
   }
   75% {
     width: 0;
-    background: green;
+    background: yellow;
   }
   100% {
     width: 200px;
@@ -177,7 +178,7 @@ ion-view {
   }
   75% {
     width: 0;
-    background: #2196f3;
+    background: yellow;
   }
   100% {
     width: 200px;
@@ -363,4 +364,172 @@ ion-view {
 }
 .alinearcantidad {
   text-align:right;
+}
+
+/* Juego de Memoria */
+
+.deck {
+    width: 300px;
+    min-height: 200px;
+    background: linear-gradient(160deg, green 0%, beige 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+    border: dotted; border-color: darkorchid;
+}
+
+.deck .card {
+    height: 50px;
+    width: 50px;
+    background: #E9E638;
+    font-size: 0;
+    color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #2ECBEA;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 20px;
+  
+}
+
+.button:hover{
+  color:blue;
+  background-color: yellow;
+
+}
+
+.deck .card.match {
+    cursor: default;
+    background: blue;
+    font-size: 33px;
+}
+
+.deck .card.inactive{
+    pointer-events: none;
+    background: #38E6E9;
+  
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+  }
+
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    color: red;
+
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart { 
+    float: right;
+    cursor: pointer;
+    color:blue;
+  
+}
+
+# hour,minute,seconds{
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color:blue;
+  background-color: blue;
+  margin: 20% auto;
+  padding-left: 15px;
+  font-weight: bold;
+  float:right;
+  border color:red;
+  
+}
+/*
+div.time{
+  width: 100px;
+  color:aqua;
+  font-size: 50px;
+  padding: .5em 5em;
+  margin: 15px;
+  border-radius: 10px;
+}*/
+/*
+#time{
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  color:blue;
+  background-color: yellow;
+  margin:auto;
+  padding-left: 15px;
+}
+
+/*Styles for Modal as obtained from W3Schools.org*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.imm {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: auto;
 }
